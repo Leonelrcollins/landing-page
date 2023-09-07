@@ -1,0 +1,192 @@
+/* Base */
+:root {
+    --bc-white: #EEE;
+    --bc-gray: #EBEAEAD0;
+    --bc-black: #292929;
+    --main-color: #071318;
+    --main-color-two: #1B323D;
+    --second-color: #E0A434;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-color);
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--bc-white);
+}
+
+.container {
+    padding: 0 20px;
+    background: linear-gradient(var(--main-color), var(--main-color-two));
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: right;
+}
+
+.sub-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Header */
+
+header {
+    height: 75px;
+    background-color: var(--main-color);
+    display: flex;
+    padding: 10px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.navbar > ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-link {
+        text-decoration: none;
+        color: var(--second-color);
+}
+
+/* Hero */
+
+#hero {
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    margin: 0 50px;
+}
+
+.hero-text {
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.sub-text {
+    font-size: 1rem;
+    font-weight: thin;
+    color: var(--bc-gray);
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    background-color: var(--second-color);
+    font-size: 1.5em;
+    color: var(--main-color);
+    font-weight: bolder;
+    border: var(--main-color-two) solid 2px;
+}
+
+button:hover {
+    background-color: var(--main-color-two);
+    border: var(--second-color) solid 2px;
+    transition: 0.3s;
+}
+
+/* Roles */
+
+#school {
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+
+.school h2 {
+    padding: 20px 0;
+}
+
+h3 {
+    color: var(--second-color);
+    font-size: 2em;
+}
+
+.rol {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 230px;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.top {
+    background-image: url(img/Sett.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.jg {
+    background-image: url(img/lee-sin-zenith-games-762x.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.mid {
+    background-image: url(img/TwistedFate_13.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.adc {
+    background-image: url(img/Vayne_FirecrackerSkin-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.supp {
+    background-image: url(img/Janna_5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+/* Info */
+
+#info {
+    padding: 50px;
+    height: 60vh;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--main-color);
+    color: var(--bc-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+}
